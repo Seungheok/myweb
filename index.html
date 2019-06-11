@@ -9,14 +9,15 @@
 body {
   font-family: Arial;
   padding: 10px;
-  background: #f1f1f1;
+  background: #f0f0f0;
+  background-color: powderblue;
 }
 
 /* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
-  background: white;
+  background: #00ff00;
 }
 
 .header h1 {
@@ -104,19 +105,44 @@ body {
     width: 100%;
   }
 }
+a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: powderblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
 </style>
+
 </head>
 <body>
 
 <div class="header">
-  <h1>나의 홈페이지</h1>
+  <h1><a href="./index.html">나의 홈페이지</h1></a>
   <p>청운대학교 컴퓨터공학과 20180784 방승혁</p>
 </div>
 
 <div class="topnav">
   <a href="./html/table.html">table</a>
-  <a href="./html/cities.html">cities</a>
+  <a href="./html/block.html">block</a>
   <a href="./html/forms.html">forms</a>
+  <a href="./html/iframe.html">iframe</a>
   <a href="https://www.w3schools.com/default.asp" style="float:right">W3schools.com</a>
 </div>
 
@@ -124,34 +150,35 @@ body {
   <div class="leftcolumn">
     <div class="card">
       <h2>CSS</h2>
-      <h5>CSS Tutoraial</h5>
-      <div class="fakeimg" style="height:200px;"><img src="../image/CSS.png" alt="CSS" style="width:50px;height:50px;"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <div class="fakeimg" style="height:200px;"><img src="./image/css.png" alt="CSS" style="width:150px;height:150px;"></div>
+
+      <p>CSS의 기초</p>
+      <p><pre>CSS is a language that describes the style of an HTML document.
+
+CSS describes how HTML elements should be displayed.
+
+This tutorial will teach you CSS from basic to advanced.</pre>
+<a href="https://www.w3schools.com/html/html_css.asp">더 자세한내용</a></p>
     </div>
     <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;"><img src="../image/back.jpg" alt="back" style="width:50px;height:50px;"></div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <h2>JAVA Script</h2>
+      <div class="fakeimg" style="height:200px;">
+        <img src="./image/javascript.png" alt="JAVAScript" style="width:350px;height:150px;">
+        </div>
+      <p>JAVA Script의 기초</p>
+      <p><pre>JavaScript is the programming language of HTML and the Web.
+
+JavaScript is easy to learn.
+
+This tutorial will teach you JavaScript from basic to advanced.</pre>
+<a href="https://www.w3schools.com/html/html_css.asp">더 자세한내용</a></p>
     </div>
   </div>
   <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-      <div class="fakeimg"><p>Image</p></div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+    
+      <h3>HTML이란</h3>
+      <blockquote cite="https://ko.wikipedia.org/wiki/HTML">하이퍼텍스트 마크업 언어(HyperText Markup Language, 문화어: 초본문표식달기언어, 하이퍼본문표식달기언어)라는 의미의 웹 페이지를 위한 지배적인 마크업 언어다. HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다. 그리고 이미지와 객체를 내장하고 대화형 양식을 생성하는 데 사용될 수 있다. HTML은 웹 페이지 콘텐츠 안의 꺾쇠 괄호에 둘러싸인 "태그"로 되어있는 HTML 요소 형태로 작성한다. HTML은 웹 브라우저와 같은 HTML 처리 장치의 행동에 영향을 주는 자바스크립트와 본문과 그 밖의 항목의 외관과 배치를 정의하는 CSS 같은 스크립트를 포함하거나 불러올 수 있다. HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마크업을 위하여 CSS의 사용을 권장한다.
+      </blockquote>
     </div>
   </div>
 </div>
