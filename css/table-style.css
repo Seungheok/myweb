@@ -13,3 +13,4 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+p {font-size: 15px;}
